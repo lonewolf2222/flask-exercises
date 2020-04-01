@@ -1,0 +1,8 @@
+{% extends "main.html" %}
+{% block content %}
+{% if first_name and last_name %}
+  <p>Thanks for contacting us, {{first_name}} {{last_name}}</p>
+{% else %}
+  <p>Please provide your contact details</p>
+{% endif %}
+{% endblock %}
